@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Listade compras</h1>
+    <form #frm="ngForm" class="add-item-form" (ngSubmit)="adicionarItem()">
+        <input type="text" id="item" [(ngModel)]="item"  name="item" placeholder="Digite o nome do Item" />
+        <button type="submit">Adicionar</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Item</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>arroz</td>
+                <td><input type="checkbox"/></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>maça</td>
+                <td><input type="checkbox"/></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
